@@ -1,9 +1,9 @@
 {
-    "name":"liqpay/liqpay",
+    "name":"myLiqpay/myLiqpay",
     "type": "library",
     "description": "SDK for Liqpay",
     "keywords": ["liqpay","pay"],
-    "homepage": "https://github.com/liqpay/sdk-php",
+    "homepage": "https://github.com/ZherebcovSergey/liqpay",
     "license": "OSL 3.0",
     "authors": [
         {
