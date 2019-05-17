@@ -238,4 +238,30 @@ class LiqPay
 
         return $signature;
     }
+    
+    
+    /**
+     * cnb_form get data
+     *
+     * @param array $params
+     *
+     * @return string
+     *
+     * @throws InvalidArgumentException
+     */
+    public function getCnbFormData($params) {
+        $language = 'ru';
+        if (isset($params['language']) && $params['language'] == 'en') {
+            $language = 'en';
+        }
+
+        $params = $this->cnb_params($params);
+        $data = $this->encode_params($params);
+        $signature = $this->cnb_signature($params);
+
+        return [
+            "data" => $data,
+            "signature" => $signature,
+        ];
+    }
 }
