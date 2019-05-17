@@ -238,8 +238,7 @@ class LiqPay
 
         return $signature;
     }
-    
-    
+      
     /**
      * cnb_form get data
      *
